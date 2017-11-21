@@ -12,6 +12,7 @@ namespace FirstWindowsApp
 {
     public partial class Form1 : Form
     {
+        List<string> _names = new List<string>();
         public Form1()
         {
             InitializeComponent();
@@ -44,8 +45,9 @@ namespace FirstWindowsApp
             {
                 msg = $"{name} is an adult.";
             }
+            _names.Add(msg);
             // var message = $"{name} is {age} years old.";
-            MessageBox.Show(msg);
+            //MessageBox.Show(msg);
         }
 
         private void txtName_TextChanged(object sender, EventArgs e)
