@@ -40,8 +40,11 @@ namespace Weekdays
             lblAreEqual.Text = String.Format("The selected days are equal: {0}", 
             cboDay.Equals(lstDay));
 
+            // C# 7 syntax
+            // lblAreEqual.Text = $"The selected days are equal: {cboDay.Equals(lstDay)}";
+
             lblAreEqual.BackColor = cboDay.Equals(lstDay) ? Color.LightGreen :
-            Color.LightPink;
+            Color.LightPink;   // how does '?' works here?  Answer read Inline IF or Inline conditional statement || opreator. Done
         }
     }
 }
