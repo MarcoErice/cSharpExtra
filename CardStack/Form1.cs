@@ -46,5 +46,10 @@ namespace CardStack
             var card = _cards.Pop();
             lstCard.Items.Add($"{card.Value} of {card.Suit}");
         }
+
+        private void lstCard_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

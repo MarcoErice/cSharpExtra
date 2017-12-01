@@ -63,6 +63,7 @@
             this.lstCard.Name = "lstCard";
             this.lstCard.Size = new System.Drawing.Size(572, 279);
             this.lstCard.TabIndex = 2;
+            this.lstCard.SelectedIndexChanged += new System.EventHandler(this.lstCard_SelectedIndexChanged);
             // 
             // btnAdd
             // 
